@@ -1,0 +1,323 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\geometry{a4paper, margin=1in}
+
+\title{Dataset Variables Description}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+Datasets are divided according to players' positions: goalkeeper, defender, midfielder, and forward.
+
+\section*{urls}
+
+\begin{itemize}
+    \item ICT Index and components: \url{https://www.premierleague.com/news/65567}
+    \item fpl points: \url{https://www.premierleague.com/news/2174909}
+    \item BPS (Bonus Points System): \url{https://www.premierleague.com/news/106533}
+\end{itemize}
+
+
+\section{goalkeeper}
+
+\subsection{fantasy stats (from fpl\_data)}
+
+\begin{longtable}{|l|p{0.7\linewidth}|}
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+% Variables specific to single matches
+player & player's name \\
+season & season \\
+
+goals\_scored & goals scored in the season\\
+assists & assists made in a season\\
+total\_points & total season fantasy points \\
+minutes & number of minutes played in the season \\
+goals\_conceded & number of goals conceded in a season \\
+creativity & "Creativity assesses player performance in producing goalscoring opportunities for others. It can be used as a guide to identify the players most likely to supply assists. While this analyses frequency of passing and crossing, it also considers pitch location and quality of the final ball". \\
+influence & "Influence evaluates the degree to which a player has impacted a single match or throughout the season. It takes into account events and actions that could directly or indirectly affect the outcome of the fixture. At the top level, these are decisive actions like goals and assists. But the Influence score also processes significant defensive actions to analyse the effectiveness of defenders and goalkeepers." \\
+threat & "This is a value that examines a player's threat on goal. It gauges the individuals most likely to score goals. While attempts are the key action, the Index looks at pitch location, giving greater weight to actions that are regarded as the best chances to score." \\
+ict\_index & combination of influence, threat, and creativity indexes. \\
+bonus & "The three best-performing players in each match will be awarded bonus points. Three points will be awarded to the highest-scoring player, two to the second best and one to the third."\\ 
+bps & "The BPS utilises a range of statistics supplied by Opta that capture actions on the pitch, to create a performance score for every player."\\ 
+clean\_sheets & number of clean sheets in a season \\
+red\_cards & number of red cards in a season \\
+yellow\_cards & number of yellow cards in a season \\
+selected\_by\_percent & percentage of fantasy coaches who select the player in the season (probably by the end of the season) \\
+
+\end{longtable}
+
+\subsection{player info (from players\_agg)}
+
+\begin{longtable}{|l|p{0.7\linewidth}|}
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+
+% Variables specific to single matches
+matching\_name\_score & scale 1 to 100, percentage matching across the two datasets players\_agg.xlsx and fpl\_data.xlsx \\
+nation & player's nationality \\
+squad & players' team \\
+age\_player & player's age \\
+born & birth year player \\
+mp\_player & matched played in a season \\
+starts\_player & number of matches player in the starting eleven \\
+90s\_player & minutes played divided by 90 \\
+crdy\_player & yellow cards' player in a season \\
+crdr\_player & red cards' player in a season \\
+
+\end{longtable}
+
+\subsection{ team info (from team\_stats)}
+\subsubsection{performance}
+
+\begin{longtable}{|l|p{0.7\linewidth}|}
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+
+% Variables specific to single matches
+
+num\_players\_team & number of players in the roster \\
+avg\_age\_team & average age team \\
+poss\_team & possession (calculated as the percentage of passes attempted) of the team. \\
+team\_poss & team's possession, calculated as the percentage of passes attempted.  \\
+gls\_team & goals scored by the team, on average, in 90 minutes. \\
+ast\_team & assists made by the team. \\
+g+a\_team & goals + assists made by the team. \\
+g-pk\_team & non-penalties goals scored by the team. \\
+pk\_team & penalty kicks made by the team \\
+pkatt\_team & penalty kicks attempted by the team \\
+crdy\_team & yellow cards' team in a season \\
+crdr\_team & red cards' team in a season \\
+\end{longtable}
+
+\subsubsection{90 minutes}
+\begin{longtable}{|l|p{0.7\linewidth}|}
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+
+% Variables specific to single matches
+
+gls\_90minutes\_team & goals scored by the team in 90 minutes \\
+ast\_90minutes\_team  & assists made by the team, on average, in 90 minutes. \\
+g+a\_90minutes\_team & goals + assists made by the team, on average, in 90 minutes. \\
+g-pk\_90minutes\_team & non-penalties goals scored by the team, on average, in 90 minutes. \\
+g+a-pk\_team & non-penalties goal + assist, on average, in 90 minutes. 
+\end{longtable}
+
+\subsubsection{expected}
+\begin{longtable}{|l|p{0.7\linewidth}|}
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+
+% Variables specific to single matches
+
+xg\_team & expected goals of a team \\
+npxg\_team & Non-Penalty Expected Goals by the team \\
+xag\_team & expected assisted goals of a team \\
+npxg+xag\_team & Non-penalty expected goals and expected assists in 90 minutes by the team.  \\
+\end{longtable}
+
+\subsubsection{progression}
+\begin{longtable}{|l|p{0.7\linewidth}|}
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+
+% Variables specific to single matches
+
+prgc\_team & progressive carries team. Carry that moves the ball toward the opponent's goal line at least 10 yards (9m circa) from its furthest point in the last six passes or any carry into the penalty area. It excludes carries that end in the defending 50\% of the pitch.\\
+
+prgp\_team & progressive passes team. Completed pass that moves the ball toward the opponent's goal line at least 10 yards (9m circa) from its furthest point in the last six passes, or any carry into the penalty area. It excludes carries that end in the defending 50\% of the pitch.\\
+\end{longtable}
+
+
+\subsubsection{expected in 90 minutes}
+\begin{longtable}{|l|p{0.7\linewidth}|}
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+
+% Variables specific to single matches
+
+xg\_90minutes\_team & expected goals of a team average 90 minutes \\
+xag\_90minutes\_team & expected assisted goals of a team average 90 minutes \\
+xg+xag\_team & expected goals + assists in 90 minutes \\
+npxg\_90minutes\_team & Non-Penalty Expected Goals in 90 minutes by the team \\
+npxg+xag\_90minutes\_team & Non-penalty expected goals and expected assists in 90 minutes by the team.  \\
+\end{longtable}
+
+\subsubsection{team stats}
+\begin{longtable}{|l|p{0.7\linewidth}|}
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline
+\textbf{Variable Name} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline \multicolumn{2}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+
+% Variables specific to single matches
+
+min\_team & minutes played by the team in the season \\
+ga\_team & goals against the team in the season \\
+ga90\_team & goals against the team in the season per 90 minutes \\
+sota\_team & shots on target against the team in the season \\
+saves\_team & saves by the team in the season \\
+saves\_prct\_team & percentage saves by the team in the season \\
+w\_team & matches won by the team in the season \\
+d\_team & matches drawn by the team in the season \\
+l\_team & matches lost by the team in the season \\
+cs\_team & clean sheets by the team in the season \\
+cs\_prct\_team & percentage clean sheets by the team in the season \\
+pkatt\_team & penalty kicks attempted by the team in the season. Sum of  pka\_team, pksv\_team, pkm\_team\\
+pka\_team & penalty kicks allowed to the team in the season \\
+pksv\_team & penalty kicks saved by the team in the season \\
+pkm\_team & penalty kicks missed by the team in the season \\
+save\_prct\_pk\_team & percentage saved penalty kicks by the team in the season \\
+min\_player & minutes played by the player in the season \\
+ga\_player & goals scored against the player in the season \\
+ga90\_player & goals scored against the player in the season, on average, in 90 minutes\\
+sota\_player & shots on target against the player in the season \\
+saves\_player & saves by the player in the season \\
+saves\_prct\_player & percentage saves by the player in the season \\
+w\_player & matches won by the player in the season \\
+d\_player & matches drawn by the player in the season \\
+l\_player & matches lost by the player in the season \\
+cs\_player & clean sheets by the player in the season \\
+cs\_prct\_player & percentage clean sheets by the player in the season \\
+pkatt\_player & penalty kicks attempted by the player in the season. Sum of  pka\_player, pksv\_player, pkm\_player\\
+pka\_player & penalty kicks allowed to the player in the season \\
+pksv\_player & penalty kicks saved by the player in the season \\
+pkm\_player & penalty kicks missed by the player in the season \\
+save\_prct\_pk\_player & percentage saved penalty kicks by the player in the season \\
+\end{longtable}
+
+\end{document}
