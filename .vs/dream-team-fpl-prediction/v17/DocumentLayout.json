@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ALESSANDRO\\Documents\\GitHub\\dream-team-fpl-prediction\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALESSANDRO\\Documents\\GitHub\\dream-team-fpl-prediction\\eda\\gk.ipynb||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eda\\gk.ipynb||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "gk.ipynb",
+              "DocumentMoniker": "C:\\Users\\ALESSANDRO\\Documents\\GitHub\\dream-team-fpl-prediction\\eda\\gk.ipynb",
+              "RelativeDocumentMoniker": "eda\\gk.ipynb",
+              "ToolTip": "C:\\Users\\ALESSANDRO\\Documents\\GitHub\\dream-team-fpl-prediction\\eda\\gk.ipynb",
+              "RelativeToolTip": "eda\\gk.ipynb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-22T07:58:20.517Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
